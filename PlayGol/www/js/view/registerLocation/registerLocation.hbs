@@ -1,0 +1,41 @@
+<div class="page-content ">
+    <form id="frmRegisterLocation" class="list-block">
+        <ul>
+            <li>
+                <a href="#" id="linkDepartamento" class="item-link smart-select" 
+                    data-searchbar-placeholder="{{idioma.search}} {{idioma.department_placeholder}}" data-searchbar="true" data-searchbar-cancel="{{idioma.cancel}}"
+                    data-page-title="{{idioma.select}}">
+                    <select id="departamento" >
+                        {{#each departamentos}}
+                            <option value="{{departamento}}">{{departamento}}</option>
+                        {{/each}}  
+                    </select>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title">{{idioma.department_placeholder}}</div>
+                            <div class="item-after">{{idioma.select}}</div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#" id="linkCiudad" class="item-link smart-select " 
+                    data-searchbar-placeholder="{{idioma.search}} {{idioma.city_placeholder}}" data-searchbar="true" data-searchbar-cancel="{{idioma.cancel}}"
+                    data-page-title="{{idioma.select}}">
+                    <select id="cod_ciudad"  >
+                        {{#each ciudades}}
+                            <option value="{{cod_ciudad}}">{{desc_ciudad}}</option>
+                        {{/each}}  
+                    </select>
+                    <div class="item-content">
+                        <div class="item-inner">
+                            <div class="item-title">{{idioma.city_placeholder}}</div>
+                            <div class="item-after lista-ciudades"></div>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </form>
+</div>
+

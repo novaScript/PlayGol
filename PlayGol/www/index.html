@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html class="with-statusbar-overlay">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>PlayGol</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="lib/css/framework7.css">
+    <link rel="stylesheet" href="lib/css/ionicons.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <div class="statusbar-overlay"></div>
+    <div class="views">
+        <div class="view view-main navbar-fixed">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="left"></div>
+                    <div class="center"></div>
+                    <div class="right">
+                        <a href="js/pages/contact/contact.html" class="link icon-only">
+                            <i class="icon icon-plus lista-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pages navbar-through fixed-through">
+                <div data-page="lista" class="page">
+                        <div class="page-content">
+                                <div class="list-block contacts-list">
+                                        <ul></ul>
+                                </div>
+                                
+                        </div>
+                </div>
+                
+            </div>
+            
+            <!-- toolbar start -->
+            <div class="toolbar tabbar tabbar-labels toolbar-hidden">
+                <div class="toolbar-inner pie-de-pagina">
+                    <a href="#home" class="tab-link">
+                        <span class="item-left"></span>
+                    </a>
+
+                    <a href="#equipo" class="tab-link active">
+                        <span class="item-central"></span>
+                    </a>
+
+                    <a href="#perfil" class="tab-link">
+                        <span class="item-right"></span>
+                    </a>
+                </div>
+            </div>
+            <!-- toolbar end -->
+        </div>
+    </div>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="lib/framework/framework7.js"></script>
+    <script data-main="app" src="lib/require.js"></script>    
+</body>
+</html>   
