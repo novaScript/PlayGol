@@ -1,6 +1,4 @@
-define(['i18n!nls/lang', 'lib/utils/appFunc', 'lib/utils/xhr', 'lib/utils/md5.min', 'confi'], function(i18n, appFunc, xhr, md5, confi){
-    
-    var urlgenerales = "http://localhost:3000/api/data_residence";
+define(['i18n!nls/lang', 'lib/utils/appFunc', 'lib/utils/xhr', 'lib/utils/md5.min', 'confi'], function(i18n, appFunc, xhr, md5, confi){   
 
     var idioma = {
         appName : i18n.app.name,
@@ -54,18 +52,13 @@ define(['i18n!nls/lang', 'lib/utils/appFunc', 'lib/utils/xhr', 'lib/utils/md5.mi
         });
     };
     
-    controllerRegisterLocation.prototype.cargarCiudades = function (cod_depar, callBack) {
+    controllerRegisterLocation.prototype.cargarCiudades = function (codDepar, callBack) {
         appPlayGol.showPreloader(idioma.loading_page);
         xhr.simpleCall({
             func:'',
-            method : 'POST',
-            url : urlgenerales,
-            data:{
-                opcion: "ciudad",
-                codDepar : cod_depar,
-                codCiudad : "",
-                descCiudad : ""
-            }
+            method : 'GET',
+            url: "http://localhost:3000/api/data_residence/Colombia/" + codDepar,
+            data:{}
         },function(response){
             appPlayGol.hidePreloader();
             callBack(response);

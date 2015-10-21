@@ -10,7 +10,7 @@ define(["js/view/registerLocation/registerLocationView", "js/model/registerLocat
             idioma = registermodel.cargarIdioma();
             //change
             var bindings = [{
-                element: '#cod_depar',
+                element: '#departamento',
                 event: 'change',
                 handler: controllerRegisterLocation.cambiarDepartamento
             },
@@ -29,6 +29,7 @@ define(["js/view/registerLocation/registerLocationView", "js/model/registerLocat
                 });
             });
         },
+
         cambiarDepartamento : function(){
             var depar = registerLocationView.departamentoSeleccionado();
             registermodel.cargarCiudades(depar, function (pciudades){
@@ -39,6 +40,7 @@ define(["js/view/registerLocation/registerLocationView", "js/model/registerLocat
                 });
             });
         },
+
         validarCampos : function(){
             if (registerLocationView.departamentoSeleccionado() === "-1") {
                 appPlayGol.alert(idioma.err_department);

@@ -2,10 +2,11 @@
     <form id="frmRegisterLocation" class="list-block">
         <ul>
             <li>
-                <a href="#" id="linkDepartamento" class="item-link smart-select" 
+                <a href="#" id="linkDepartamento" class="item-link smart-select"
                     data-searchbar-placeholder="{{idioma.search}} {{idioma.department_placeholder}}" data-searchbar="true" data-searchbar-cancel="{{idioma.cancel}}"
-                    data-page-title="{{idioma.select}}">
+                    data-page-title="{{idioma.department_placeholder}}">
                     <select id="departamento" >
+                        <option value="{{idioma.select}}" selected="selected">{{idioma.select}}</option>
                         {{#each departamentos}}
                             <option value="{{departamento}}">{{departamento}}</option>
                         {{/each}}  
@@ -19,18 +20,18 @@
                 </a>
             </li>
             <li>
-                <a href="#" id="linkCiudad" class="item-link smart-select " 
+                <a href="#" id="linkCiudad" class="item-link smart-select" 
                     data-searchbar-placeholder="{{idioma.search}} {{idioma.city_placeholder}}" data-searchbar="true" data-searchbar-cancel="{{idioma.cancel}}"
-                    data-page-title="{{idioma.select}}">
-                    <select id="cod_ciudad"  >
+                    data-page-title="{{idioma.city_placeholder}}">
+                    <select id="ciudad">                        
                         {{#each ciudades}}
-                            <option value="{{cod_ciudad}}">{{desc_ciudad}}</option>
+                            <option value="{{ciudad}}">{{ciudad}}</option>
                         {{/each}}  
                     </select>
                     <div class="item-content">
                         <div class="item-inner">
                             <div class="item-title">{{idioma.city_placeholder}}</div>
-                            <div class="item-after lista-ciudades"></div>
+                            <div class="item-after lista-ciudades">{{idioma.select}}</div>
                         </div>
                     </div>
                 </a>
