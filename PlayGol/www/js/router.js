@@ -3,9 +3,11 @@ define(['confi', 'lib/utils/appFunc'],function(confi, appFunc){
     window.router = {
         init: function() {
             if(!confi.isLogin()){
-               mainView.loadPage('js/pages/login/login.html');
+                //mainView.loadPage('js/pages/login/login.html');
+                mainView.loadPage('js/pages/equipos/equipos.html');
             }else{
-                router.load("pageStart",null);
+                //router.load("lista", null);
+                //mainView.loadPage('js/pages/equipos/equipos.html');
             }
             
             $(document).on('pageBeforeInit', function (e) {
@@ -58,6 +60,9 @@ define(['confi', 'lib/utils/appFunc'],function(confi, appFunc){
                 router.load(name, query);
                 break;
             case 'registerLocation':
+                router.load(name, query);
+                break;
+           case 'equipos':
                 router.load(name, query);
                 break;
             }

@@ -136,5 +136,12 @@ define({
         err_email_exists : "El correo ya existe",
         regist_success : "Register successful",
         err_regist_success : "An error occurred in the record"
+    },
+    team: {
+        page_name: 'Register team',
+        name_team: "Name",
+        add_player: "Add",
+        delete_player: "Delete",
+        edit_player: "Edit Player's"
     }
 });

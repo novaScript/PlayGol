@@ -21,6 +21,8 @@ define(["js/view/login/loginView", "js/model/login/loginModel"], function (Login
     }
 
     function loginSubmit() {
+        /*falta hacer el login y hacer el diseno del la tabla*/
+        /*
         var formInput = appPlayGol.formToJSON('#frmLogin');
         login.setValues(formInput);
         var mensaje = login.validate();
@@ -29,6 +31,7 @@ define(["js/view/login/loginView", "js/model/login/loginModel"], function (Login
             return;
         }
         login.loguear();
+        */
     }
 
     return {

@@ -136,5 +136,12 @@ define({
         err_email_exists : "El correo ya existe",
         regist_success : "Registro exitoso",
         err_regist_success : "Ocurrio un error en el registro"
+    },
+    team: {
+        page_name: 'Registro equipo',
+        name_team: "Nombre",
+        add_player: "Agregar",
+        delete_player: "Eliminar",
+        edit_player: "Editar Jugadores"
     }
 });
