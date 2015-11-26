@@ -1,24 +1,83 @@
 <div class="page-content ">
-    <div class="content-block-title">{{idioma.switch_language}}</div>
+    <div class="content-block-title">Labels and inputs</div>
     <div class="list-block">
         <ul>
+            <!-- Text inputs -->
             <li>
-                <label class="label-checkbox item-content">
-                    <input class="language-radio" type="radio" name="language-radio" data-lang="es-co" />
-                    <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                <div class="item-content">
                     <div class="item-inner">
-                        <div class="item-title">Español</div>
+                        <div class="item-title label">Name</div>
+                        <div class="item-input">
+                            <input type="text" placeholder="Your name">
+                        </div>
                     </div>
-                </label>
+                </div>
             </li>
             <li>
-                <label class="label-checkbox item-content">
-                    <input class="language-radio" type="radio" name="language-radio" data-lang="en-us" />
-                    <div class="item-media"><i class="icon icon-form-checkbox"></i></div>
+                <div class="item-content">
                     <div class="item-inner">
-                        <div class="item-title">English</div>
+                        <div class="item-title label">E-mail</div>
+                        <div class="item-input">
+                            <input type="email" placeholder="E-mail">
+                        </div>
                     </div>
-                </label>
+                </div>
+            </li>
+
+            <!-- Select -->
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Gender</div>
+                        <div class="item-input">
+                            <select>
+                                <option>Male</option>
+                                <option>Female</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Date -->
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Birth date</div>
+                        <div class="item-input">
+                            <input type="date" placeholder="Birth day" value="2014-04-30">
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Switch (Checkbox) -->
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Switch</div>
+                        <div class="item-input">
+                            <label class="label-switch">
+                                <input type="checkbox">
+                                <div class="checkbox"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <!-- Slider (Range input) -->
+            <li>
+                <div class="item-content">
+                    <div class="item-inner">
+                        <div class="item-title label">Slider</div>
+                        <div class="item-input">
+                            <div class="range-slider">
+                                <input type="range" min="0" max="100" value="50" step="0.1">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
